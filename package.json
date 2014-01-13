@@ -1,0 +1,10 @@
+{
+   "name" : "bit2c-trader",
+   "version" : "0.0.1",
+   "dependencies" : {
+      "underscore" : "1.5.2",
+      "request": "2.29.0"
+   },
+   "devDependencies": {
+   }
+}
