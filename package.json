@@ -16,6 +16,7 @@
       "mocha": "1.6.0",
       "should": "1.2.0"
    },
+    "main": "./lib/bit2c",
 
     "scripts": {
        "test": "node_modules/mocha/bin/mocha -R spec -r should test/bit2c.js"
