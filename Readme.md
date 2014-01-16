@@ -15,7 +15,7 @@ The API is documented at: http://www.bit2c.co.il/home/api
 
 This is an example of accessing the public API
 ```javascript
-var bit2c = require('./lib/bit2c');
+var bit2c = require('bit2c');
 
 // getting current ticker
 bit2c.getTicker('BtcNis', function(error, ticker) {
@@ -25,7 +25,7 @@ bit2c.getTicker('BtcNis', function(error, ticker) {
 
 This is an example of accessing the private API
 ```javascript
-var bit2c = require('./lib/bit2c'),
+var bit2c = require('bit2c'),
    // the key and secret are taken from your bitc account:
    // login->api tab-> generate new
    // always keep them safe - the best practice is to put them in env variables
