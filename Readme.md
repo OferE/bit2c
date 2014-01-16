@@ -7,6 +7,8 @@ A node.js module for accessing bit2c (the Israeli bitcoin exchange) API.
 npm install bit2c
 </code></pre>
 
+## Contributions Welcome
+We welcome contributions from the community and are pleased to have them. For bugs, enhancement requests and comments please open us issues. For code contribution please fork and ask for pull request: Please make sure you follow our coding style and that the tests are green. Make sure not to include your bit2c credentials in the source code.
 
 ## Running the tests
 
