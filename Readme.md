@@ -17,6 +17,8 @@ If you want to run the tests that require access to the private API you should d
 These keys can be taken from your bit2c account. Just login -> API tab -> generate new.
 
 Warning! - these keys grant access to your bit2c account! keep them safe!
+During the test an order of 15 bitcoin for 15 Nis will be created and deleted for you, so maybe you will get lucky...
+If you don't want this to happen, just remove the environment variables.
 
 For running the tests just clone the repository and then:
 <pre><code>
