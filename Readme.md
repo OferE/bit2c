@@ -13,7 +13,7 @@ The API is documented at: http://www.bit2c.co.il/home/api
 
 ## Usage
 
-This is an example for accessing the public API
+This is an example of accessing the public API
 ```javascript
 var bit2c = require('./lib/bit2c');
 
@@ -23,7 +23,7 @@ bit2c.getTicker('BtcNis', function(error, ticker) {
 });
 ```
 
-This is an example for accessing the private API
+This is an example of accessing the private API
 ```javascript
 var bit2c = require('./lib/bit2c'),
    // the key and secret are taken from your bitc account:
