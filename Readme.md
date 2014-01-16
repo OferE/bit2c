@@ -11,9 +11,9 @@ npm install bit2c
 The bit2c provides a way to work with bit2c the Israeli bitcoin exchange (www.bit2c.co.il).
 The API is documented at: http://www.bit2c.co.il/home/api
 
-## Basic Use Case
+## Usage
 
-This is an example for accessing public the API
+This is an example for accessing the public API
 ```javascript
 var bit2c = require('./lib/bit2c');
 
@@ -22,6 +22,24 @@ bit2c.getTicker('BtcNis', function(error, ticker) {
    console.log(ticker);
 });
 ```
+
+This is an example for accessing the private API
+```javascript
+var bit2c = require('./lib/bit2c'),
+   // the key and secret are taken from your bitc account:
+   // login->api tab-> generate new
+   // always keep them safe - the best practice is to put them in env variables
+   credentials = { 
+      key: your-bit2c-key,
+      secret: your-bit2c-secret-key
+   };
+
+// getting your current balance
+bit2c.getBalance(credentials, function(error, balance) {
+   console.log(balance);
+});
+```
+
 
 
 ## Contributions Welcome
