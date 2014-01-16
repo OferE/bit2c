@@ -1,6 +1,6 @@
 {
    "name" : "bit2c",
-   "version" : "0.0.1",
+   "version" : "0.0.2",
 
    "author": {
       "name": "Ofer Eliassaf",
@@ -24,6 +24,8 @@
 
    "keywords": [
       "bitcoin", "bitcoin-exchange", "israel", "israeli-bitcoin-exchange"
-   ]
+   ],
+
+   "repository": "https://github.com/OferE/bit2c.git"
 
 }
