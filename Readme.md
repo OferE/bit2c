@@ -3,10 +3,8 @@ A node.js module for accessing bit2c (the israeli bitcoin echange) API.
 
 ## Installing
 
-clone the lib, cd to its root path and then:
-
 <pre><code>
-npm install
+npm install bit2c
 </code></pre>
 
 
@@ -20,8 +18,9 @@ These keys can be taken from your bit2c account. Just login -> API tab -> genera
 
 Warning! - these keys grant access to your bit2c account! keep them safe!
 
-For running the tests just use:
+For running the tests just clone the repository and then:
 <pre><code>
+npm install
 npm test
 </code></pre>
 
