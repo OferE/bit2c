@@ -8,7 +8,7 @@ npm install bit2c
 </code></pre>
 
 ## Overview
-The bit2c provides a way to work with bit2c the Israeli bitcoin exchange (www.bit2c.co.il).
+The bit2c module provides a way to work with bit2c: the Israeli bitcoin exchange (www.bit2c.co.il).
 The API is documented at: http://www.bit2c.co.il/home/api
 
 ## Usage
