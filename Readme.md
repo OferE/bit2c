@@ -40,7 +40,7 @@ bit2c.getBalance(credentials, function(error, balance) {
 });
 ```
 
-## Full documentation
+## Full Documentation
 Coming soon...
 
 ## Contributions Welcome
