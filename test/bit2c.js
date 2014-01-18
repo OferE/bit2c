@@ -88,7 +88,7 @@ describe('checking bit2c public API', function() {
 
 
 if (!credentials.key && !credentials.secret) {
-   console.log('cant test the private API functionality.\,' + 
+   console.log('cant test the private API functionality, ' + 
                'please define 2 env variables: BIT2C_KEY and BIT2C_SECRET');
    process.exit(0);
 }
