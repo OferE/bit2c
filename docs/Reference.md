@@ -18,7 +18,7 @@ Returns a ticker of a given pair.
 
 - `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
 
-### `getTrades(pair, callback)`
+### `getTrades(pair, since, callback)`
 
 Returns closed trades of a given pair.
 
