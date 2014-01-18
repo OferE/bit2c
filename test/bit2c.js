@@ -37,7 +37,7 @@ describe('checking bit2c public API', function() {
 
    it('should get trades of BtcNis', function(done) {
       this.timeout(20000);
-      bit2c.getTrades('BtcNis', function(error, ticker) {
+      bit2c.getTrades('BtcNis', undefined, function(error, ticker) {
          should.not.exist(error);
          ticker.length.should.be.above(0);
          should.exist(ticker[0].date);
@@ -50,7 +50,7 @@ describe('checking bit2c public API', function() {
 
    it('should get trades of LtcBtc', function(done) {
       this.timeout(20000);
-      bit2c.getTrades('LtcBtc', function(error, ticker) {
+      bit2c.getTrades('LtcBtc', undefined, function(error, ticker) {
          should.not.exist(error);
          ticker.length.should.be.above(0);
          should.exist(ticker[0].date);
@@ -63,7 +63,7 @@ describe('checking bit2c public API', function() {
 
    it('should get order book of BtcNis', function(done) {
       this.timeout(20000);
-      bit2c.getOrderBook('BtcNis', undefined, function(error, orderBook) {
+      bit2c.getOrderBook('BtcNis', function(error, orderBook) {
          should.not.exist(error);
          should.exist(orderBook.bids);
          should.exist(orderBook.asks);
@@ -75,7 +75,7 @@ describe('checking bit2c public API', function() {
 
    it('should get order book of LtcBtc', function(done) {
       this.timeout(20000);
-      bit2c.getOrderBook('LtcBtc', undefined, function(error, orderBook) {
+      bit2c.getOrderBook('LtcBtc', function(error, orderBook) {
          should.not.exist(error);
          should.exist(orderBook.bids);
          should.exist(orderBook.asks);

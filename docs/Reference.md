@@ -1,7 +1,7 @@
 #  API Reference
 ## Public API
 - [`getTicker(pair, callback)`](#gettickerpair-callback)
-- [`getTrades(pair, callback)`](#gettradespair-callback)
+- [`getTrades(pair, since, callback)`](#gettradespair-since-callback)
 - [`getOrderBook(pair, callback)`](#getorderbookpair-callback)
 
 ## Private API
@@ -23,6 +23,7 @@ Returns a ticker of a given pair.
 Returns closed trades of a given pair.
 
 - `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
+- `since` - Return transactions for the last 'tid'
 
 ### `getOrderBook(pair, callback)`
 
