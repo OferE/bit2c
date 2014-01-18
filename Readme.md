@@ -1,5 +1,5 @@
 # bit2c
-A node.js module for accessing bit2c (the Israeli bitcoin exchange) API.
+A node.js module for accessing bit2c's (the Israeli bitcoin exchange) API.
 
 ## Installing
 
