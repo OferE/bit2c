@@ -1,16 +1,16 @@
 #  API Reference
 ## Public API
-- [`getTicker(pair, callback)`](#getticker)
-- [`getTrades(pair, callback)`](#gettrades)
-- [`getOrderBook(pair, callback)`](#getorderbook)
+- [`getTicker(pair, callback)`](#gettickerpair-callback)
+- [`getTrades(pair, callback)`](#gettradespair-callback)
+- [`getOrderBook(pair, callback)`](#getorderbookpair-callback)
 
 ## Private API
-- [`getBalance(credentials, callback)`](#getbalance)
-- [`getMyOrders(credentials, pair, callback)`](#getmyorders)
-- [`addOrder(credentials, orderDetails, callback)`](#addorder)
-- [`cancelOrder(credentials, tid, callback)`](#addorder)
-- [`getAccountHistory(credentials, from, to, callback)`](#getaccounthistory)
-- [`createMerchantCheckout(credentials, checkoutDetails, callback)`](#createmerchantcheckout)
+- [`getBalance(credentials, callback)`](#getbalancecredentials-callback)
+- [`getMyOrders(credentials, pair, callback)`](#getmyorderscredentials-callback)
+- [`addOrder(credentials, orderDetails, callback)`](#addordercredentials-orderdetails-callback)
+- [`cancelOrder(credentials, tid, callback)`](#cancelordercredentials-tid-callback)
+- [`getAccountHistory(credentials, from, to, callback)`](#getaccounthistorycredentials-from-to-callback)
+- [`createMerchantCheckout(credentials, checkoutDetails, callback)`](#createmerchantcheckoutcredentials-checkoutdetails-callback)
 
 ### `getTicker(pair, callback)`
 
