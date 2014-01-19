@@ -26,7 +26,7 @@ bit2c.getTicker('BtcNis', function(error, ticker) {
 This is an example of accessing the private API
 ```javascript
 var bit2c = require('bit2c'),
-   // the key and secret are taken from your bitc account:
+   // the key and secret are taken from your bit2c account:
    // login->api tab-> generate new
    // always keep them safe - the best practice is to put them in env variables
    credentials = { 
@@ -50,7 +50,7 @@ We welcome contributions from the community and are pleased to have them. For bu
 
 If you want to run the tests that require access to the private API you should define 2 environment variables:
 * BIT2C_KEY - your bit2c key
-* BIT2C_SECRET - your bit2c key
+* BIT2C_SECRET - your bit2c secret
 
 These keys can be taken from your bit2c account. Just login -> API tab -> generate new.
 
