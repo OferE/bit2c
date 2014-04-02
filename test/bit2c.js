@@ -193,7 +193,7 @@ describe('checking bit2c private API', function() {
    });
    
    it ('should create merchant checkout', function(done) {
-      this.timeout(25000);
+      this.timeout(30000);
       setTimeout(function() {
 
          var checkoutDetails = {
@@ -212,5 +212,60 @@ describe('checking bit2c private API', function() {
          });
       },1000);
    });
+
+   it ('should find coins fund address for Bitcoin (AddCoinFundsRequest)', function(done) {
+
+      this.timeout(30000);
+      bit2c.addCoinsRequest(credentials, 50, 'Btc', function(error, result) {
+         should.not.exist(error);
+         should.exist(result);
+         should.exist(result.address);
+         done();
+      });
+   });
+ 
+   it ('should find coins fund address for Litecoin (AddCoinFundsRequest)', function(done) {
+
+      this.timeout(30000);
+      bit2c.addCoinsRequest(credentials, 50, 'Ltc', function(error, result) {
+         should.not.exist(error);
+         should.exist(result);
+         should.exist(result.address);
+         done();
+      });
+   });
+ 
+   // it ('should add funds request NIS (AddFund)', function(done) {
+
+   //    this.timeout(30000);
+   //    bit2c.addFundRequest(credentials, 50, '12345678', true, function(error, result) {
+   //       should.not.exist(error);
+   //       should.exist(result);
+   //       console.log(result);
+   //       done();
+   //    });
+   // });
+ 
+   it ('should get my payment id (GetMyId)', function(done) {
+
+      this.timeout(30000);
+      bit2c.getPaymentId(credentials, function(error, result) {
+         should.not.exist(error);
+         should.exist(result);
+         done();
+      });
+   });
+ 
+   // it ('should send bitcoin payment (GetMyId)', function(done) {
+
+   //    this.timeout(30000);
+
+   //    bit2c.sendPayment(credentials, 'kukuGuid', 0.0001, 'Btc', function(error, result) {
+   //       should.not.exist(error);
+   //       should.exist(result);
+   //       console.log(result);
+   //       done();
+   //    });
+   // });
 });
 
