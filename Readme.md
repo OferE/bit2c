@@ -64,9 +64,6 @@ npm install
 npm test
 </code></pre>
 
-## Support This Project
-Bitcoin address: 1CgYd5vufcoAwkGx9eHrmgduSgX7pP3YTX
-
 
 ## License
 (The MIT License)
